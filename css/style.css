@@ -30,7 +30,10 @@ a:focus,
 input,
 textarea,
 input:active,
-textarea:active {
+textarea:active,
+select,
+select:active,
+select:hover {
   outline: none;
 }
 
@@ -138,6 +141,20 @@ h4 {
   background-color: #f2353f;
   color: #ffffff;
   transition: 150ms ease-in;
+}
+
+select {
+  padding: 19px 27px 19px 25px;
+  font-size: 12px;
+  font-family: "TT Norms";
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border: 1px solid #1f2c37;
+  transition: 150ms ease-in;
+}
+
+select:hover {
+  border: #f2353f 1px solid;
 }
 
 /**** repetitive ****/
@@ -1106,4 +1123,66 @@ main {
 
 .equipment-item-explanation-text p.text1 {
   width: 537px;
+}
+
+/** work **/
+
+.work .section-header {
+  grid-column: 1/3;
+  margin-top: 101px;
+  margin-bottom: 145px;
+}
+
+.work-options {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work .our-work {
+  grid-column: 1/3;
+}
+
+.work-select select {
+  width: 360px;
+}
+
+.work-sort label {
+  padding: 19px 27px 19px 25px;
+  font-size: 12px;
+  font-family: "TT Norms";
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.work-sort {
+  display: flex;
+  align-items: center;
+}
+
+.work-sort select {
+  width: 230px;
+}
+
+.work .our-work {
+  height: 100%;
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px 60px;
+}
+
+.work .our-work-item {
+  width: 360px;
+  margin: 0;
+  align-self: center;
+}
+
+.work .our-work-item-img {
+  width: 100%;
+}
+
+.work .plus-hr-link {
+  margin-top: 180px;
 }
