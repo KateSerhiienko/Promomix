@@ -1,0 +1,17 @@
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    grid-template-columns: 1fr 13fr;
+    grid-template-areas: "nv hd" "ap ap" "menu menu" "mn mn" "ft ft";
+  }
+  .nav {
+    width: 100px;
+    height: 100px;
+  }
+  .nav-arrow {
+    display: none;
+  }
+  header .wrapper {
+    margin-left: 0;
+  }
+}
