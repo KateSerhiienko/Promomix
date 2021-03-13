@@ -1086,15 +1086,15 @@ main {
   margin-bottom: 145px;
 }
 
-.work-options {
+.work form {
   grid-column: 1/3;
+  width: 100%;
+}
+
+.work-options {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.work .our-work {
-  grid-column: 1/3;
 }
 
 .work-select select {
