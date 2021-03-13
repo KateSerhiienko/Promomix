@@ -54,16 +54,10 @@ const application_top = document.querySelector(".application-top");
 const application_top_esc = document.querySelector(".application-top .esc");
 
 application_request.onclick = function () {
-    if (menu.classList.contains("no-display")) {
-       application_top.classList.toggle("no-display");
-    }
-    else {
-        menu.classList.add("no-display");
-        nav_item.classList.add("nav-hamburger");
-        nav_item.classList.remove("esc");
-        application_top.classList.toggle("no-display");
-    }
-
+    menu.classList.add("no-display");
+    nav_item.classList.add("nav-hamburger");
+    nav_item.classList.remove("esc");
+    application_top.classList.toggle("no-display");
 }
 application_top_esc.onclick = function () {
     application_top.classList.add("no-display");
