@@ -160,14 +160,12 @@ select:hover {
 /**** repetitive ****/
 
 .esc {
-  background-color: #1f2c37;
-  -webkit-mask: url(../img/esc.svg) no-repeat center;
-  mask: url(../img/esc.svg) no-repeat center;
+  width: 30px;
   transition: 150ms ease-in;
 }
 
 .esc:hover {
-  background-color: #f2353f;
+  fill: #f2353f;
 }
 
 .no-display {
@@ -180,27 +178,29 @@ select:hover {
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  color: #1f2c37;
 }
 
-.plus-hr-link div {
-  width: 23px;
-  height: 23px;
-  background-color: #1f2c37;
-  -webkit-mask: url(../img/plus.svg) no-repeat center;
-  mask: url(../img/plus.svg) no-repeat center;
+.plus-hr-link:hover {
+  color: #f2353f;
+  fill: #f2353f;
+  border-bottom-color: #f2353f;
+}
+
+.plus {
+  width: 30px;
   transition: 150ms ease-in;
 }
 
-.plus-hr-link hr {
+.plus-hr-link div {
   width: 1000px;
   height: 1px;
-  background-color: #1f2c37;
-  border: none;
+  border-bottom: 1px solid;
+  border-bottom-color: inherit;
   transition: 150ms ease-in;
 }
 
 .plus-hr-link p {
-  color: #1f2c37;
   font-size: 16px;
   font-weight: 500;
   transition: 150ms ease-in;
@@ -211,13 +211,9 @@ select:hover {
   align-items: center;
 }
 
-.more-link div {
-  width: 12.07px;
-  height: 8.5px;
+.more-link svg {
+  width: 20px;
   margin-right: 15px;
-  -webkit-mask: url(../img/arrow_right.svg) no-repeat center;
-  mask: url(../img/arrow_right.svg) no-repeat center;
-  background-color: #1f2c37;
   transition: 150ms ease-in;
 }
 
@@ -252,28 +248,20 @@ select:hover {
 }
 
 .nav-hamburger {
-  background-color: #1f2c37;
-  -webkit-mask: url(../img/hamburger.svg) no-repeat center;
-  mask: url(../img/hamburger.svg) no-repeat center;
   transition: 150ms ease-in;
 }
 
 .nav-hamburger:hover {
-  background-color: #f2353f;
+  fill: #f2353f;
 }
 
 .nav-arrow {
-  width: 14.14px;
-  height: 20.07px;
   margin-bottom: 70px;
-  background-color: #1f2c37;
-  -webkit-mask: url(../img/arrow_down.svg) no-repeat center;
-  mask: url(../img/arrow_down.svg) no-repeat center;
   transition: 150ms ease-in;
 }
 
 .nav-arrow:hover {
-  background-color: #f2353f;
+  fill: #f2353f;
 }
 
 /**** header ****/
@@ -301,6 +289,10 @@ header {
   transition: 150ms ease-in;
 }
 
+.header-logo-img:hover {
+  background-image: url(../img/logo_hover.svg);
+}
+
 .header-nav {
   grid-column: 2/3;
   display: flex;
@@ -314,24 +306,16 @@ header {
   align-items: center;
 }
 
-.header-nav-search div {
+.header-nav-search svg {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  background-color: #1f2c37;
-  -webkit-mask: url(../img/search.svg) no-repeat center;
-  mask: url(../img/search.svg) no-repeat center;
   transition: 150ms ease-in;
 }
 
 .header-nav-search span {
   font-size: 16px;
   transition: 150ms ease-in;
-}
-
-.header-nav-search img {
-  width: 15px;
-  height: 15px;
 }
 
 .header-nav-tel {
@@ -350,9 +334,11 @@ header {
   transition: 150ms ease-in;
 }
 
+.header-nav-search:hover,
 .header-nav-tel:hover,
 .header-nav-request:hover {
   color: #f2353f;
+  fill: #f2353f;
 }
 
 /**** menu ****/
@@ -471,22 +457,22 @@ a.btn:hover {
   padding: 8px 0;
 }
 
+.footer-top-info-mailing form:hover {
+  border-bottom: 1px solid #f2353f;
+}
+
 .footer-top-info-mailing input {
   background-color: inherit;
   border: none;
 }
 
-.footer-top-info-mailing div {
-  width: 20.07px;
-  height: 14.14px;
-  -webkit-mask: url(../img/arrow_right_submit.svg) no-repeat center;
-  mask: url(../img/arrow_right_submit.svg) no-repeat center;
-  background-color: #1f2c37;
+.footer-top-info-mailing svg {
+  width: 20px;
   transition: 150ms ease-in;
 }
 
-.footer-top-info-mailing div:hover {
-  background-color: #f2353f;
+.footer-top-info-mailing svg:hover {
+  fill: #f2353f;
 }
 
 .footer-bottom {
@@ -679,62 +665,26 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 40px;
+  fill: #f2353f;
   transition: 150ms ease-in;
+}
+
+.key-areas-item:hover {
+  color: #ffffff;
+  background-color: #f2353f;
+  fill: #ffffff;
 }
 
 .service-svg {
   width: 70px;
   height: 70px;
-  background-color: #f2353f;
-  transition: 150ms ease-in;
   margin-bottom: 56px;
-}
-
-.service-1 {
-  -webkit-mask: url(../img/service1.svg) no-repeat center;
-  mask: url(../img/service1.svg) no-repeat center;
-}
-
-.service-2 {
-  -webkit-mask: url(../img/service2.svg) no-repeat center;
-  mask: url(../img/service2.svg) no-repeat center;
-}
-
-.service-3 {
-  -webkit-mask: url(../img/service3.svg) no-repeat center;
-  mask: url(../img/service3.svg) no-repeat center;
-}
-
-.service-4 {
-  -webkit-mask: url(../img/service4.svg) no-repeat center;
-  mask: url(../img/service4.svg) no-repeat center;
-}
-
-.service-5 {
-  -webkit-mask: url(../img/service5.svg) no-repeat center;
-  mask: url(../img/service5.svg) no-repeat center;
-}
-
-.service-6 {
-  -webkit-mask: url(../img/service6.svg) no-repeat center;
-  mask: url(../img/service6.svg) no-repeat center;
-}
-
-.service-7 {
-  -webkit-mask: url(../img/service7.svg) no-repeat center;
-  mask: url(../img/service7.svg) no-repeat center;
-}
-
-.service-8 {
-  -webkit-mask: url(../img/service8.svg) no-repeat center;
-  mask: url(../img/service8.svg) no-repeat center;
 }
 
 .key-areas-item p {
   width: 140px;
   font-size: 19px;
   line-height: 1.4;
-  transition: 150ms ease-in;
 }
 
 /** advantages **/
@@ -787,6 +737,10 @@ main {
 .our-work-item {
   margin-top: 100px;
   margin-right: 60px;
+}
+
+.our-work-item:hover {
+  color: #f2353f;
 }
 
 .our-work-item:nth-child(4n) {
@@ -850,6 +804,11 @@ main {
   color: #1f2c37;
 }
 
+.news-item:hover {
+  color: #f2353f;
+  fill: #f2353f;
+}
+
 .news-img {
   display: flex;
   justify-content: space-between;
@@ -891,6 +850,7 @@ main {
   height: 72px;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #1f2c37;
 }
 
 /** about **/
@@ -1075,6 +1035,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 6fr 6fr 1fr;
   align-items: center;
+  fill: #b0b6bf;
+}
+
+.equipment-item-header:hover {
+  color: #f2353f;
+  fill: #f2353f;
 }
 
 .equipment-item-header p.text2 {
@@ -1087,22 +1053,9 @@ main {
   transition: 150ms ease-in;
 }
 
-.equipment-item-header-plus {
-  width: 23px;
-  height: 23px;
-  justify-self: end;
-  -webkit-mask: url(../img/plus.svg) no-repeat center;
-  mask: url(../img/plus.svg) no-repeat center;
-  background-color: #1f2c37;
-  transition: 150ms ease-in;
-}
-
+.equipment-item-header-plus,
 .equipment-item-header-minus {
-  width: 23px;
-  height: 23px;
-  -webkit-mask: url(../img/minus.svg) no-repeat center;
-  mask: url(../img/minus.svg) no-repeat center;
-  justify-self: end;
+  width: 35px;
   transition: 150ms ease-in;
 }
 
