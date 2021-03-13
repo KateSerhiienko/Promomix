@@ -124,10 +124,12 @@ for (let i = 0; i < equipment_items_header.length; i++) {
 
 // work 
 
-let work_select = document.querySelector("#work_select");
+const works_select = document.querySelector("#work_select");
+const arr_our_work_items = Array.from(our_work_items);
 
-for (let i = 0; i < 5; i++){
-   if (work_select[i].selected) {
-    console.log(i);
-   }  
-}
+works_select.addEventListener('change', (event) => {
+    arr_our_work_items.map(item => item.classList.add("no-display"));
+
+    let someItems = arr_our_work_items.filter(item => item.classList.contains(event.path[0].value));
+    Array.from(someItems.map(item => item.classList.remove("no-display")));
+});
