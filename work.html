@@ -17,21 +17,13 @@
 
         <nav class="nav">
             <div class="nav-item">
-                <svg viewBox="0 0 16 16" class="nav-hamburger">
-                    <path fill-rule="evenodd"
-                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                <svg class="nav-hamburger">
+                    <use xlink:href="svg/sprite.svg#svg-hamburger"></use>
                 </svg>
-                <svg viewBox="0 0 16 16" class="esc no-display">
-                    <path
-                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                <svg class="esc no-display">
+                    <use xlink:href="svg/sprite.svg#svg-esc"></use>
                 </svg>
             </div>
-            <a href="#footer" class="nav-item nav-arrow">
-                <svg viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-                </svg>
-            </a>
         </nav>
         
         <header>
@@ -41,9 +33,8 @@
                 </a>
                 <nav class="header-nav">
                     <div class="header-nav-search">
-                        <svg viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        <svg>
+                            <use xlink:href="svg/sprite.svg#svg-magnifier"></use>
                         </svg>
                         <span>Поиск</span>
                     </div>
@@ -54,15 +45,14 @@
         </header>
         
         <article class="application application-top no-display">
-            <svg viewBox="0 0 16 16" class="esc">
-                <path
-                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            <svg class="esc">
+                <use xlink:href="svg/sprite.svg#svg-esc"></use>
             </svg>
             <div class="wrapper">
                 <div class="application-form">
                     <h1>Оставьте заявку</h1>
                     <form>
-                        <p class="text2">Оставьте заявку, наш менеджер обработает
+                        <p class="text20">Оставьте заявку, наш менеджер обработает
                             её и свяжется с вами в ближайшее время</p>
                         <input type="text" placeholder="Имя">
                         <input type="tel" placeholder="Телефон">
@@ -84,13 +74,13 @@
             <div class="wrapper">
                 <div class="menu-nav">
                     <ul>
-                        <li><a class="text1" href="about.html">О компании</a></li>
-                        <li><a class="text1" href="services.html">Услуги</a></li>
-                        <li><a class="text1" href="work.html">Наши работы</a></li>
-                        <li><a class="text1" href="service.html">Сервис</a></li>
-                        <li><a class="text1" href="complex.html">Комплексные решения</a></li>
-                        <li><a class="text1" href="news.html">Статьи и новости</a></li>
-                        <li><a class="text1" href="contacts.html">Контакты</a></li>
+                        <li><a class="text16" href="about.html">О компании</a></li>
+                        <li><a class="text16" href="services.html">Услуги</a></li>
+                        <li><a class="text16" href="work.html">Наши работы</a></li>
+                        <li><a class="text16" href="service.html">Сервис</a></li>
+                        <li><a class="text16" href="complex.html">Комплексные решения</a></li>
+                        <li><a class="text16" href="news.html">Статьи и новости</a></li>
+                        <li><a class="text16" href="contacts.html">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -107,12 +97,12 @@
                             <div class="work-select">
                                 <select name="" id="work_select">
                                     <option value="our-work-item">Все услуги</option>
-                                    <option value="Signboard">Вывеска объемная</option>
-                                    <option value="EntryGroup">Входная группа и вывеска</option>
-                                    <option value="Style">Фирменный стиль</option>
-                                    <option value="OutdoorAdvertising">наружная реклама</option>
-                                    <option value="CityFormat">сити-формат</option>
-                                    <option value="Design">Дизайн и печать</option>
+                                    <option value="signboard">Вывеска объемная</option>
+                                    <option value="entryGroup">Входная группа и вывеска</option>
+                                    <option value="style">Фирменный стиль</option>
+                                    <option value="outdoorAdvertising">наружная реклама</option>
+                                    <option value="cityFormat">сити-формат</option>
+                                    <option value="design">Дизайн и печать</option>
                                 </select>
                             </div>
                             <div class="work-sort">
@@ -123,92 +113,92 @@
                             </div>
                         </div>
                         <div class="our-work">
-                            <div class="our-work-item Signboard" name="1">
+                            <div class="our-work-item" name="signboard">
                                 <img class="our-work-item-img" src="img/Starbucks.png" alt="Кафе Starbucks Coffee">
                                 <h4>Кафе Starbucks Coffee</h4>
                                 <p>Вывеска объемная</p>
                             </div>
-                            <div class="our-work-item EntryGroup">
+                            <div class="our-work-item" name="entryGroup">
                                 <img class="our-work-item-img" src="img/Emosi.png" alt="Сеть ресторанов Emosi">
                                 <h4>Сеть ресторанов Emosi</h4>
                                 <p>Входная группа и вывеска</p>
                             </div>
-                            <div class="our-work-item Style">
+                            <div class="our-work-item" name="style">
                                 <img class="our-work-item-img" src="img/Flora.png" alt="Релакс студия Flora">
                                 <h4>Релакс студия Flora</h4>
                                 <p>Фирменный стиль</p>
                             </div>
-                            <div class="our-work-item EntryGroup">
+                            <div class="our-work-item" name="entryGroup">
                                 <img class="our-work-item-img" src="img/Levis.png" alt="Магазин Levi's">
                                 <h4>Магазин Levi's</h4>
                                 <p>Входная группа и вывеска</p>
                             </div>
-                            <div class="our-work-item Style">
+                            <div class="our-work-item" name="style">
                                 <img class="our-work-item-img" src="img/Sierra.png" alt="Бизнес центр Sierra">
                                 <h4>Бизнес центр Sierra</h4>
                                 <p>ФИРМЕННЫЙ СТИЛЬ</p>
                             </div>
-                            <div class="our-work-item Signboard">
+                            <div class="our-work-item" name="signboard">
                                 <img class="our-work-item-img" src="img/Bottem.png" alt="Салон красоты Bottem">
                                 <h4>Салон красоты Bottem</h4>
                                 <p>Вывеска объемная</p>
                             </div>
-                            <div class="our-work-item OutdoorAdvertising">
+                            <div class="our-work-item" name="outdoorAdvertising">
                                 <img class="our-work-item-img" src="img/BioFlora2.png" alt="Bio бутик Flora">
                                 <h4>Bio бутик Flora</h4>
                                 <p>наружная реклама</p>
                             </div>
-                            <div class="our-work-item EntryGroup">
+                            <div class="our-work-item" name="entryGroup">
                                 <img class="our-work-item-img" src="img/Chanel.png" alt="Фэшн бутик Chanel">
                                 <h4>Фэшн бутик Chanel</h4>
                                 <p>Входная группа и вывеска</p>
                             </div>
-                            <div class="our-work-item Style">
+                            <div class="our-work-item" name="style">
                                 <img class="our-work-item-img" src="img/Pure.png" alt="SPA центр Pure">
                                 <h4>SPA центр Pure</h4>
                                 <p>ФИРМЕННЫЙ СТИЛЬ</p>
                             </div>
-                            <div class="our-work-item CityFormat">
+                            <div class="our-work-item" name="cityFormat">
                                 <img class="our-work-item-img" src="img/McD.png" alt="Кафе McDonald's">
                                 <h4>Кафе McDonald's</h4>
                                 <p>сити-формат</p>
                             </div>
-                            <div class="our-work-item Signboard">
+                            <div class="our-work-item" name="signboard">
                                 <img class="our-work-item-img" src="img/Adidas.png" alt="Магазин одежды adidas">
                                 <h4>Магазин одежды adidas</h4>
                                 <p>Вывеска объемная</p>
                             </div>
-                            <div class="our-work-item EntryGroup">
+                            <div class="our-work-item" name="entryGroup">
                                 <img class="our-work-item-img" src="img/Butcher.png" alt="Бургерная Butcher">
                                 <h4>Бургерная Butcher</h4>
                                 <p>Входная группа и вывеска</p>
                             </div>
-                            <div class="our-work-item Design">
+                            <div class="our-work-item" name="design">
                                 <img class="our-work-item-img" src="img/Flora-relax.png" alt="Релакс студия Flora">
                                 <h4>Релакс студия Flora</h4>
                                 <p>Дизайн и печать открыток</p>
                             </div>
-                            <div class="our-work-item Style">
+                            <div class="our-work-item" name="style">
                                 <img class="our-work-item-img" src="img/Brand.png" alt="Системы безопасности Brand">
                                 <h4>Системы безопасности Brand</h4>
                                 <p>ФИРМЕННЫЙ СТИЛЬ</p>
                             </div>
-                            <div class="our-work-item Design">
+                            <div class="our-work-item" name="design">
                                 <img class="our-work-item-img" src="img/Bukos.png" alt="Детский центр Bukos">
                                 <h4>Детский центр Bukos</h4>
                                 <p>дизайн и печать каталогов</p>
                             </div>
-                            <div class="our-work-item EntryGroup">
+                            <div class="our-work-item" name="entryGroup">
                                 <img class="our-work-item-img" src="img/Pure2.png" alt="SPA центр Pure">
                                 <h4>SPA центр Pure</h4>
                                 <p>Входная группа и вывеска</p>
                             </div>
-                            <div class="our-work-item Style">
+                            <div class="our-work-item" name="style">
                                 <img class="our-work-item-img" src="img/Geometria.png" alt="Магазин Geometria">
                                 <h4>Магазин Geometria</h4>
                                 <p>ФИРМЕННЫЙ СТИЛЬ</p>
                             </div>
-                            <div class="our-work-item Design">
+                            <div class="our-work-item" name="design">
                                 <img class="our-work-item-img" src="img/Siera-otkr.png" alt="Бизнес центр Sierra">
                                 <h4>Бизнес центр Sierra</h4>
                                 <p>дизайн и печать визиток</p>
@@ -216,9 +206,8 @@
                         </div>
                     </form> 
                     <a href="#" class="plus-hr-link">
-                        <svg class="plus" viewBox="0 0 16 16">
-                            <path
-                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        <svg class="plus">
+                            <use xlink:href="svg/sprite.svg#svg-plus"></use>
                         </svg>
                         <div></div>
                         <p>Показать ещё</p>
@@ -227,7 +216,7 @@
             </section>
         </main>
 
-        <footer id="footer">
+        <footer>
             <div class="bg-grey footer-top">
                 <div class="wrapper">
                     <div>
@@ -236,21 +225,20 @@
                     </div>
                     <div class="footer-top-info">
                         <ul class="menu-nav">
-                            <li><a class="text1" href="about.html">О компании</a></li>
-                            <li><a class="text1" href="services.html">Услуги</a></li>
-                            <li><a class="text1" href="work.html">Наши работы</a></li>
-                            <li><a class="text1" href="service.html">Сервис</a></li>
-                            <li><a class="text1" href="complex.html">Комплексные решения</a></li>
-                            <li><a class="text1" href="news.html">Статьи и новости</a></li>
-                            <li><a class="text1" href="contacts.html">Контакты</a></li>
+                            <li><a class="text16" href="about.html">О компании</a></li>
+                            <li><a class="text16" href="services.html">Услуги</a></li>
+                            <li><a class="text16" href="work.html">Наши работы</a></li>
+                            <li><a class="text16" href="service.html">Сервис</a></li>
+                            <li><a class="text16" href="complex.html">Комплексные решения</a></li>
+                            <li><a class="text16" href="news.html">Статьи и новости</a></li>
+                            <li><a class="text16" href="contacts.html">Контакты</a></li>
                         </ul>
                         <div class="footer-top-info-mailing">
-                            <p class="text1">Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу рассылку.</p>
+                            <p class="text16">Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу рассылку.</p>
                             <form>
-                                <input class="text1" type="email" placeholder="Ваш e-mail">
+                                <input class="text16" type="email" placeholder="Ваш e-mail">
                                 <svg viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                    <use xlink:href="svg/sprite.svg#svg-arrowRight"></use>
                                 </svg>
                             </form>
                         </div>
@@ -259,15 +247,14 @@
             </div>
         
             <article id="application-bottom" class="application application-footer no-display">
-                <svg viewBox="0 0 16 16" class="esc">
-                    <path
-                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                <svg class="esc">
+                    <use xlink:href="svg/sprite.svg#svg-esc"></use>
                 </svg>
                 <div class="wrapper">
                     <div class="application-form">
                         <h1>Оставьте заявку</h1>
                         <form>
-                            <p class="text2">Оставьте заявку, наш менеджер обработает
+                            <p class="text20">Оставьте заявку, наш менеджер обработает
                                 её и свяжется с вами в ближайшее время</p>
                             <input type="text" placeholder="Имя">
                             <input type="tel" placeholder="Телефон">
