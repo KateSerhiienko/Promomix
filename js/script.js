@@ -13,6 +13,8 @@ const black = "#1f2c37";
 //     logo.style.background = "url(../img/logo.svg) no-repeat center";
 // }
 
+
+
 const header_nav_search = document.querySelector(".header-nav-search");
 
 header_nav_search.onmouseover = function () {
